@@ -1,0 +1,42 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: #f5f5f5;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+input, select, button {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+}
+
+button {
+    background: #2196F3;
+    color: white;
+    cursor: pointer;
+}
+
+#previewPhoto {
+    width: 150px;
+    height: 150px;
+    border: 2px dashed #ccc;
+    margin-top: 10px;
+    background-size: cover;
+    background-position: center;
+}
