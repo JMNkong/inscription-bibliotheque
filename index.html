@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Inscription Bibliothèque</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Bibliothèques externes -->
+    <script src="https://cdn.jsdelivr.net/npm/jspdf@2.5.1/dist/jspdf.umd.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/qrcode-generator/qrcode.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>📚 Formulaire d'Inscription</h1>
+        
+        <form id="formInscription">
+            <!-- Photo -->
+            <div class="form-group">
+                <label>Photo :</label>
+                <input type="file" id="photo" accept="image/*" required>
+                <div id="previewPhoto"></div>
+            </div>
+
+            <!-- Informations personnelles -->
+            <input type="text" name="nom" placeholder="Nom" required>
+            <input type="text" name="postnom" placeholder="Post-nom">
+            <input type="text" name="prenom" placeholder="Prénom" required>
+            
+            <!-- Contact -->
+            <input type="tel" name="telephone" placeholder="Téléphone" pattern="[+0-9]{10,15}" required>
+            <input type="email" name="email" placeholder="Email" required>
+            <input type="text" name="adresse" placeholder="Adresse">
+
+            <!-- Catégorie -->
+            <select name="categorie" required>
+                <option value="">Choisir une catégorie</option>
+                <option>Étudiant</option>
+                <option>Enseignant</option>
+                <option>Visiteur</option>
+            </select>
+
+            <button type="submit">S'inscrire</button>
+        </form>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
